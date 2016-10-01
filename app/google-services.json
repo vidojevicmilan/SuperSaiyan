@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1094051379248",
+    "firebase_url": "https://super-saiyan.firebaseio.com",
+    "project_id": "super-saiyan",
+    "storage_bucket": "super-saiyan.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1094051379248:android:5cd7ca12701aa691",
+        "android_client_info": {
+          "package_name": "com.nocomment.supersaiyan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1094051379248-84md1n4f0q40nitcnfk75oms1nh34iq1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBu7f5uq9PVmuQgoTZmZiJ4FUbHHMG8AeA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
