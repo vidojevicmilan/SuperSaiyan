@@ -38,20 +38,40 @@ dependencies {
 
     //firebase client
     compile 'com.firebase:firebase-client-android:2.3.1'
-
     //Google sign in
-    compile 'com.google.android.gms:play-services-auth:9.6.1'
-
+    
     //firebase auth
     compile 'com.google.firebase:firebase-auth:9.6.1'
+    
+    //Google maps
+    compile 'com.google.android.gms:play-services-auth:9.6.1'
 
     compile 'com.android.support:appcompat-v7:24.2.1'
     compile 'com.android.support:support-v4:24.2.1'
     compile 'com.android.support:design:24.2.1'
-
-    //Google maps
     compile 'com.google.android.gms:play-services:9.6.1'
     compile 'com.google.android.gms:play-services-maps:9.6.1'
+
+    /*
+        //firebase core
+        compile 'com.google.firebase:firebase-core:9.6.1'
+
+        //firebase client
+        compile 'com.firebase:firebase-client-android:2.3.1'
+        //Google sign in
+
+        //firebase auth
+        compile 'com.google.firebase:firebase-auth:9.6.1'
+
+        //Google maps
+        compile 'com.google.android.gms:play-services-auth:9.6.1'
+
+        compile 'com.android.support:appcompat-v7:24.2.1'
+        compile 'com.android.support:support-v4:24.2.1'
+        compile 'com.android.support:design:24.2.1'
+        compile 'com.google.android.gms:play-services:9.6.1'
+        compile 'com.google.android.gms:play-services-maps:9.6.1'
+     */
 
     testCompile 'junit:junit:4.12'
 }
