@@ -33,9 +33,10 @@ public class SuperSaiyanApplication extends Application {
     public void onCreate() {
         super.onCreate();
 
+
         // Firebase initialization
         Firebase.setAndroidContext(this);
-        myFirebase = new Firebase("https://super-saiyan.firebaseio.com/");
+        setMyFirebase(new Firebase("https://super-saiyan.firebaseio.com/"));
 
 
 

@@ -34,6 +34,7 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.firebase.client.Firebase;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.*;
@@ -154,8 +155,8 @@ public class LoginActivity extends BaseActivity implements LoaderCallbacks<Curso
         }
     }
 
-    private void createAccount(String email, String password) {
-        Toast.makeText(getApplicationContext(), "createAccount:" + email, Toast.LENGTH_SHORT).show();
+    private void createAccount(final String email, String password) {
+        //Toast.makeText(getApplicationContext(), "createAccount:" + email, Toast.LENGTH_SHORT).show();
 
         showProgressDialog();
 
@@ -172,6 +173,11 @@ public class LoginActivity extends BaseActivity implements LoaderCallbacks<Curso
                         if (!task.isSuccessful()) {
                             Toast.makeText(getApplicationContext(), "Auth failed!",
                                     Toast.LENGTH_SHORT).show();
+                        }
+                        else if(task.isSuccessful()){
+                            //Toast.makeText(getApplicationContext(),mAuth.getCurrentUser().getUid(),Toast.LENGTH_LONG).show();
+                            Firebase base = ((SuperSaiyanApplication)getApplication()).getMyFirebase().child("Users").child(mAuth.getCurrentUser().getUid());
+                            base.setValue(new User("New Dog","N/A","0",getString(R.string.goku_image_base64)));
                         }
 
                         // [START_EXCLUDE]
