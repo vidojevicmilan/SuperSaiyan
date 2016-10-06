@@ -24,7 +24,7 @@ public class User {
         return image;
     }
 
-    public User(String username, String phone, String xp, String image) {
+    public User(String username, String phone, String image) {
         this.username = username;
         this.phone = phone;
         this.xp = xp;

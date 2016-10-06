@@ -177,7 +177,10 @@ public class LoginActivity extends BaseActivity implements LoaderCallbacks<Curso
                         else if(task.isSuccessful()){
                             //Toast.makeText(getApplicationContext(),mAuth.getCurrentUser().getUid(),Toast.LENGTH_LONG).show();
                             Firebase base = ((SuperSaiyanApplication)getApplication()).getMyFirebase().child("Users").child(mAuth.getCurrentUser().getUid());
-                            base.setValue(new User("New Dog","N/A","0",getString(R.string.goku_image_base64)));
+                            base.setValue(new User("New Dog","N/A",getString(R.string.goku_image_base64)));
+
+                            Firebase score = ((SuperSaiyanApplication)getApplication()).getMyFirebase().child("Scoreboard").child(mAuth.getCurrentUser().getUid());
+                            score.setValue("0");
                         }
 
                         // [START_EXCLUDE]

@@ -160,7 +160,9 @@ public class HomeActivity extends AppCompatActivity
 
         } else if (id == R.id.nav_gallery) {
 
-        } else if (id == R.id.nav_slideshow) {
+        } else if (id == R.id.nav_scoreboard) {
+            Intent intent = new Intent(this, ScoreboardActivity.class);
+            startActivity(intent);
 
         } else if (id == R.id.nav_profile) {
             Intent intent = new Intent(this, ProfileActivity.class);
